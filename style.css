@@ -54,21 +54,38 @@ section {
   border: 1px solid #E2E8F0;
 }
 
-/* Contact Form */
+/* Contact Form Layout */
 form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+  max-width: 600px;
 }
 
-input, textarea {
+/* Each field group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+input,
+textarea {
+  width: 100%;
   padding: 12px;
   border-radius: 8px;
   border: 1px solid #CBD5E1;
   font-size: 15px;
   font-family: inherit;
+  box-sizing: border-box;
 }
 
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Focus style */
 input:focus,
 textarea:focus {
   outline: none;
@@ -76,7 +93,7 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
 }
 
-button.btn {
-  border: none;
-  cursor: pointer;
+/* Button alignment */
+form button {
+  align-self: flex-start;
 }
