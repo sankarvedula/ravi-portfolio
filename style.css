@@ -97,3 +97,9 @@ textarea:focus {
 form button {
   align-self: flex-start;
 }
+
+label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #334155;
+}
