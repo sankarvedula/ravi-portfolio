@@ -9,7 +9,7 @@
 
 <body>
   <header class="hero">
-  <h1>Free lancer</h1>
+  <h1>Free Lancer</h1>
   <p class="tagline">Enterprise Java • Spring Boot • HCL Digital Experience Specialist</p>
   <a href="#contact" class="btn">Contact Me</a>
 </header>
@@ -31,9 +31,31 @@
     </ul>
   </section>
 
-  <section>
-    <h3>Contact</h3>
-    <p>Email: rsv@rsvtech.dev</p>
-  </section>
+  <section id="contact">
+  <h3>Contact Me</h3>
+
+  <form action="https://formsubmit.co/support@rsvtech.dev" method="POST">
+
+    <label>Name</label>
+    <input type="text" name="name" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Subject</label>
+    <input type="text" name="subject" required>
+
+    <label>Message</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <!-- Optional settings -->
+    <input type="hidden" name="_subject" value="New Contact Request - RSVTech">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit" class="btn">Send Message</button>
+    <input type="hidden" name="_next" value="https://rsvtech.dev/thankyou.html">
+  </form>
+
+</section>
 </body>
 </html>

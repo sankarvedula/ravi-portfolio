@@ -1,43 +1,82 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
-  background-color: #f5f7fa;
-  color: #333;
+  background-color: #F8FAFC;
+  color: #0F172A;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #1a73e8, #0b4dbb);
+  background: linear-gradient(135deg, #2563EB, #1E3A8A);
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 .hero h1 {
   margin: 0;
-  font-size: 42px;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 .tagline {
   font-size: 18px;
-  margin: 15px 0;
+  margin: 18px 0;
+  color: rgba(255,255,255,0.9);
 }
 
+/* Button */
 .btn {
   display: inline-block;
   background: white;
-  color: #1a73e8;
-  padding: 10px 20px;
-  border-radius: 6px;
+  color: #1E3A8A;
+  padding: 12px 24px;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
 
 /* Sections */
 section {
   background: white;
-  padding: 25px;
-  margin: 25px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 28px;
+  margin: 28px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  border: 1px solid #E2E8F0;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #CBD5E1;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+button.btn {
+  border: none;
+  cursor: pointer;
 }
